@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html lang="es">
+	<head>
+		<title>ETIQUETAS DE FORMULARIOS</title>
+		<style>
+		    #table1 {
+		        width: 80%;
+		    }
+		    #table1 thead{
+		        background-color:orange;
+		        color: white;
+		    }
+		    #table1 tbody{
+		        background-color: white;
+		        color: black;
+		    }
+		    #table1 tfoot{
+		        background-color: green;
+		        color: white;
+		    }
+		    #table2 {
+		        width: 80%;
+		    }
+        #table2 thead{
+           background-color: purple;
+           color: white;
+        }
+        #table2 tbody{
+            background-color: white;
+            color:black;
+        }
+        #table2 tfoot{
+           background-color: white;
+           color:black;
+        }
+        #table3 {
+		        width: 80%;
+		    }
+        #table3 tbody{
+            background-color: white;
+            color:black;
+        }
+        #table3 tfoot{
+           background-color: green;
+           color:blue;
+        }
+        #table3 thead{
+           background-color: red;
+           color: white;
+        }
+        #table4 {
+		        width: 80%;
+		    }
+        #table4 thead{
+           background-color: green;
+           color:white;
+        }
+        #table4 tbody{
+            background-color: white;
+            color:black;
+        }
+        #table4 tfoot{
+           background-color: green;
+           color:white;
+        }
+		</style>
+	</head>
+	<body>
+		
+		<caption><i><strong><B><FONT COLOR="blue"><h1>FORMULARIOS</h1></FONT><br></strong></i></caption>
+		
+		<table id="table1" border="2">
+		    <caption><i><strong><B><FONT COLOR="green"><h1>INPUT</h1></FONT><br></strong></i></caption>
+		    <thead>
+		        <tr>
+		            <th>Etiqueta</th>
+		            <th>Descripcion</th>
+                <th>Ejemplo de uso</th>
+		        </tr>
+		    </thead>
+            <tbody>
+		        <tr>
+		            <td rowspan="3">&lt;input&gt; type=hidden</td>
+		            <td>representa cualquier cadena de texto arbitraria que no está pensada para ser vista o editada por el usuario. Los controles ocultos son especialmente útiles para enviar datos al servidor definidos por el autor, basados o no en la interacción con el usuario.</td>
+                <td><p> &lt;input type="text" name="algodetexto"&gt;</p></td>
+		        </tr>
+            <tbody>
+                <tr>
+                  <td>&lt;input&gt;
+                  type=text</td>  
+                  <td>Su valor predeterminado es text, si no se especifica este atributo</td>  
+                  <td><p>< input type="text" name="nombre" value="John" ></p></td>   
+                </tr>
+                
+                <tr>
+                   <td>&lt;input&gt; accept</td> 
+                   <td>Si el valor del atributo type es file, este atributo indica los tipos de archivo que el servidor acepta, de otra manera será ignorado. El valor debe ser una lista de tipos de contenido únicos, separados por coma</td>
+                   <td> < input type="file" name="archivosubido" ></td>
+                </tr>
+                
+                <tr>
+                   <td>&lt;input&gt;autocomplete</td> 
+                   <td>Este atributo indica si el valor del control puede ser completado automáticamente por el navegador</td>
+                   <td>< input type="text" id="cc" name="cc" autocomplete="off" ></td>
+                </tr>
+                
+                <tr>
+                   <td>&lt;input&gt; autocorrect</td> 
+                   <td>atributo no estándar que es usado para controlar si la autocorrección debe estar habilitada cuando el usuario está introduciendo/editando el texto de un input</td>
+                   <td>< input autocomplete="on" autocorrect="on" autocapitalize="on" type="text" name="textinput" placeholder="Enter a test" spellcheck="on" ></td>
+                </tr>
+                
+                <tr>
+                   <td>&lt;input&gt; autofocus</td> 
+                   <td>atributo Booleano permite especificar que un control de formulario tenga el cursor cuando la página se carga, a menos que el usuario lo reemplace</td>
+                   <td>< input type="number" name="nombre" autofocus="autofocus"/ ></td>
+                </tr>
+                
+                <tr>
+                   <td>&lt;input&gt; formmethod</td> 
+                   <td>Si el elemento input es un botón de tipo submit o image, este atributo especifica el método HTTP que el navegador usará para enviar el formulario</td>
+                   <td>< input type="submit" formmethod="get" value="enviar con GET" ></td>
+                </tr>
+                
+                <tr>
+                   <td>&lt;input&gt; formnovalidate</td> 
+                   <td>Si el elemento input es de tipo submit o image, este atributo Booleano especifica que el formulario no será validado cuando se envíe. Si este atributo está especificado, reemplaza al atributo novalidate del formulario al que pertenece el elemento</td>
+                   <td>< input type="submit" formnovalidate="formnovalidate" value="Enviar sin validación" ></td>
+                </tr>
+                
+                <tr>
+                   <td>&lt;input&gt; formtarget</td> 
+                   <td>Si el elemento input es de tipo submit o image, este atributo es el nombre o palabra clave que indica dónde mostrar la respuesta que se recibe después de enviar el formulario</td>
+                   <td>< input type="submit" formtarget="_blank" value="Enviar" ></td>
+                </tr>
+                
+                <tr>
+                   <td>&lt;input&gt; readonly </td> 
+                   <td>atributo indica que el usuario no puede modificar el valor del control. El valor del atributo es irrelevante. De ser necesario el acceso lectura-escritura al valor, no se debe agregar el atributo "readonly </td>
+                   <td>< input readonly ></td>
+                </tr>
+                
+                <tr>
+                   <td>&lt;input&gt;name</td> 
+                   <td>El nombre del control, el cual es enviado con los datos del formulario</td>
+                   <td>< input type="tipo" id="identificador" size="tamaño" name="nombre" value="texto por defecto"/ ></td>
+                   
+                </tr>
+                
+            </tbody>
+                
+            </tfoot>
+            
+        </table>
+        
+        
+    </body>
+
+		<table id="table2" border="2">
+      <caption><i><strong><B><FONT COLOR="green"><h1>SELECT</h1></FONT><br></strong></i></caption>
+		    <thead>
+		        <tr>
+		            <th>Etiqueta</th>
+		            <th>Descripcion</th>
+                <th>Ejemplo de uso</th>
+		        </tr>
+		    </thead>
+            <tbody>
+		        <tr>
+                  <td rowspan="3">size (number)</td>  
+                  <td>Cuando el control se muestra como una caja con barras de desplazamiento, este atributo expecifica la altura de dicha caja como un número de líneas</td>  
+                  <td>< select size="3">< option>Películas < /option >< /select> </td>   
+                </tr>
+		        </tr>
+            <tbody>
+                 <tr>
+                   <td>multiple</td> 
+                   <td>atributo booleano está presente el usuario puede escoger más de una opción mantieniendo presionada la tecla CTRL al seleccionar. Cuando está ausente, sólo una opción puede ser seleccionada a la vez</td>
+                   <td>< select multiple="multiple"> < >Películas< /option> < /select></td>
+                </tr>
+                
+                 <tr>
+                   <td>disabled</td> 
+                   <td>Los usuarios no podrán cambiar el contenido del control cuando este atributo esté presente además, el control no podrá recibir el enfoque y su información no será enviada con el formulario.</td>
+                   <td>< select disabled="disabled" >< option>Películas < /option> < /select ></td>
+                </tr>
+                
+                 <tr>
+                   <td>name (cdata)</td> 
+                   <td>Asigna un nombre al elemento que será usado para identificarlo por el agente procesador cuando el formulario sea enviado</td>
+                   <td>< select name="mascotafavorita" >...Opciones...< /select ></td>
+                </tr>
+                
+            </tbody>
+                
+            </tfoot>
+            
+        </table>
+        
+        
+    </body>
+
+
+                
+            </tbody>
+                
+            </tfoot>
+            
+        </table>
+        
+        
+    </body>
+
+</html>
+<table id="table3" border="2">
+      <caption><i><strong><B><FONT COLOR="green"><h1>TEXTAREA</h1></FONT><br></strong></i></caption>
+		    <thead>
+		        <tr>
+		            <th>Etiqueta</th>
+		            <th>Descripcion</th>
+                <th>Ejemplo de uso</th>
+		        </tr>
+		    </thead>
+            <tbody>
+		         <tr>
+                   <td rowspan="3">placeholder</td> 
+                   <td>pista acerca del contenido que se espera sea ingresado en el control, el cual será mostrado dentro de la caja de texto cuando ésta esté vacía</td>
+                   <td> < p > < textarea name="mensaje" placeholder="Comparte tu opinión con el autor!" >< /textarea ></p></td>
+                </tr>
+                
+            <tbody>
+                 
+                <tr>
+                   <td>name</td> 
+                   <td>valor inicial como contenido del elemento este valor será usado para rellenar el control cuando el documento sea cargado y cuando el formulario sea restaurado.</td>
+                   <td>< p >< textarea name="comment" > Hola! Creo que estás completamente equivocado!< /textarea >< /p ></td>
+                </tr>
+                
+                  <tr>
+                   <td>cols y rows</td> 
+                   <td>establecer el número de caracteres que el control podrá mostrar al mismo tiempo, horizontal y verticalmente</td>
+                   <td> < p >< textarea name="descripcion" cols="40" rows="5" >< /textarea >< /p ></td>
+                </tr>
+                <tr>
+                   <td>minlength y maxlength</td> 
+                   <td>establecen la cantidades mínima y máxima de caracteres que el control puede recibir</td>
+                   <td>< p >< textarea name="biografia" minlength="20" maxlength="50" >< /textarea >< /p ></td>
+                </tr>
+                
+                <tr>
+                   <td>required</td> 
+                   <td>atributo está presente, los navegadores que lo soportan impedirán el envío del formulario hasta que el control haya sido rellenado</td>
+                   <td>< p >< textarea name="comentarios" required >< /textarea >< /p>< /td>
+                </tr>
+                </tr>
+                
+            </tbody>
+                
+            </tfoot>
+            
+        </table>
+        
+        
+    </body>
+
+<table id="table4" border="2">
+		    <caption><i><strong><B><FONT COLOR="green"><h1>RADIO</h1></FONT><br></strong></i></caption>
+		    <thead>
+		        <tr>
+		            <th>Etiqueta</th>
+		            <th>Descripcion</th>
+                <th>Ejemplo de uso</th>
+		        </tr>
+		    </thead>
+            <tbody>
+		        <tr>
+		            <td rowspan="3">name</td>
+		            <td>conjunto de botones de opción pertenezcan al mismo grupo, todos ellos deberían tener el mismo valor en el atributo</td>
+                   <td>< input type="radio" name="empleoactual" value="tiempocompleto" > Tiempo completo < br ></td>
+		        </tr>
+            <tbody>
+
+                
+                <tr>
+                   <td>label</td> 
+                   <td>asociaremos al botón de opción con todo lo demás que esté dentro</td>
+                   <td>< label>< input type="radio" name="empleoactual" value="tiempocompleto" > Tiempo completo< /label >< br ></td>
+                </tr>
+                
+                <tr>
+                   <td>checked</td> 
+                   <td>para indicarle al navegador que debería seleccionar al botón de opción cuando la página es cargada y cuando el formulario es restaurado</t>
+                   <td> < label ><  type="radio" name="curso" value="ceramica"> Cerámica < /label >< br ></td>
+                </tr>
+                
+            </tbody>
+                
+            </tfoot>
+            
+        </table>
+  
+  <body style="background-color:rgb(51, 212, 255);"> </body> 
+</html>
