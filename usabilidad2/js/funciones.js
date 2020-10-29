@@ -7,7 +7,8 @@ function auditoria(){
  		var resultado = sumaPuntos("resultados");
  		if(resultado % 2 ){
  			sumaImpares = parseFloat(sumaImpares) + parseFloat(resultado);
- 		}else{
+ 		}
+    else{
  			sumaPares = parseFloat(sumaPares) + parseFloat(resultado);
  		}
  	}
