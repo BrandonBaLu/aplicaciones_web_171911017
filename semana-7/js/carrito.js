@@ -4,9 +4,9 @@ function insertar(){
   var selected = producto.options[producto.selectedIndex].text;
   var cantidad= $("#cantidad_product").val();
   var total= cantidad * precio
-  var texto = "La cantidad de productos es : "+ cantidad + "\nEl producto es: " + selected +  "\nEl precio es de:$" + precio + "\nEl total es de:$"+ total+"\n";
+  var texto = "Tus compras son:"+"\nLa cantidad de productos es : "+ cantidad + "\nEl producto es: " + selected +  "\nEl precio es de:$" + precio + "\nEl total es de:$"+ total+"\n";
   var otro = $("#comment").val()+ texto;
-  var totalcompra=total + total
+  var totalcompra=total
   if(cantidad<10 & cantidad >0 &  precio >0) 
   {
   
@@ -26,6 +26,5 @@ function insertar(){
 }
 
 function limpiar(){
-  $("#comment").val('');
-
+  $("#comment").empty();
 };
