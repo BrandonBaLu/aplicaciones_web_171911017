@@ -1,13 +1,13 @@
 function insertar(){
-  var precio=$("#producto").val();
-  var producto= document.getElementById("producto");
-  var selected = producto.options[producto.selectedIndex].text;
   var cantidad= $("#cantidad_product").val();
-  var total= cantidad * precio ;
-  var carrito= $("#comment").val();
-  {
-    $("#comment").text(carrito + cantidad )
-    document.getElementById("comment").innerHTML = otro;
+  var nombreProducto = $("#producto option:selected").text();
+  var precio=$("#producto").val();
+  var carrito = $("#comment").val();
+  var total=0;
+  
+  if(cantidad<10 & cantidad >0 &  precio >0){
+    $("#comment").text(carrito + "Tus compras son:"+"\nCantidad : "+ cantidad + " El producto es: " + nombreProducto +  " Precio:$" + precio + "\nEl total es de:$"+ parseFloat(cantidad)*parseFloat(precio)+"\n");
+    llenaTotal(parseFloat(cantidad)* parseFloat(precio));
   }
   else if (cantidad <=0 & precio<=0 ){
     Swal.fire("Error","No has ingresado valores", 'error')
@@ -24,5 +24,12 @@ function insertar(){
 
 function limpiar(){
   $("#comment").empty();
-};
+  $("#totalCompra").val('0');
+}
+
+function llenaTotal(costo){
+  var totalActual = $("#totalCompra").val();
+  var totalFinal = parseFloat(totalActual)+parseFloat(costo);
+  $("#totalCompra").val(totalFinal);
+}
 
