@@ -18,14 +18,17 @@ function insertar(){
   }
 
   else if (precio>0 & cantidad<=0 || precio<=0 & cantidad>0 ){
-    Swal.fire("Error","No has insertado valores completos", 'error')
+    Swal.fire("Error","Ingresa producto o cantidad", 'error')
   }
 }
 
 function limpiar(){
   $("#comment").empty();
+  $("#cantidad_product").val(" ");
   $("#totalCompra").val('0');
+  $("#producto").val("0");
 }
+
 
 function llenaTotal(costo){
   var totalActual = $("#totalCompra").val();
