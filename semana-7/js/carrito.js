@@ -8,6 +8,8 @@ function insertar(){
   if(cantidad<10 & cantidad >0 &  precio >0){
     $("#comment").text(carrito +"La cantidad del producto es: "+ cantidad + "\tEl producto es: " + nombreProducto +  "\tPrecio:$" + precio + "\tEl total es de:$"+ parseFloat(cantidad)*parseFloat(precio)+"\n");
     llenaTotal(parseFloat(cantidad)* parseFloat(precio));
+    $("#cantidad_product").val(" ")
+    $("#producto").val("0")
   }
   else if (cantidad <=0 & precio<=0 ){
     Swal.fire("Error","No has ingresado valores", 'error')
@@ -35,4 +37,3 @@ function llenaTotal(costo){
   var totalFinal = parseFloat(totalActual)+parseFloat(costo);
   $("#totalCompra").val(totalFinal);
 }
-
